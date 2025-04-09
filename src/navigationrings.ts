@@ -1,0 +1,154 @@
+// import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink } from './utils/permalinks';
+
+export const headerDataRings = {
+
+  links: [
+    { text: 'WebsiteX', href: 'https://dundonald-show.org.uk/', target: '_blank' },
+    {
+      text: 'Home PagesX',
+      links: [
+        {
+          text: 'Home-SaaS',
+          href: getPermalink('/homes/saas'),
+        },
+        {
+          text: 'Home-Startup',
+          href: getPermalink('/homes/startup'),
+        },
+        {
+          text: 'Home-Mobile App',
+          href: getPermalink('/homes/mobile-app'),
+        },
+        {
+          text: 'Home-Personal',
+          href: getPermalink('/homes/personal'),
+        },
+        {
+          text: 'Classes',
+          href: '#classes',
+        },
+      ],
+    },
+
+    {
+      text: 'Blog pages',
+      links: [
+        {
+          text: 'Blog:Blog List',
+          href: getBlogPermalink(),
+        },
+        {
+          text: 'Blog:Article',
+          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+        },
+        {
+          text: 'Blog:Article (with MDX)',
+          href: getPermalink('markdown-elements-demo-post', 'post'),
+        },
+        {
+          text: 'Blog:Category Page',
+          href: getPermalink('tutorials', 'category'),
+        },
+        {
+          text: 'Blog:Tag Page',
+          href: getPermalink('astro', 'tag'),
+        },
+      ],
+    },
+    {
+      text: 'Landing Pages',
+      links: [
+        {
+          text: 'Land:Lead Generation',
+          href: getPermalink('/landing/lead-generation'),
+        },
+        {
+          text: 'Land:Long-form Sales',
+          href: getPermalink('/landing/sales'),
+        },
+        {
+          text: 'Land:Click-Through',
+          href: getPermalink('/landing/click-through'),
+        },
+        {
+          text: 'Land:Product Details (or Services)',
+          href: getPermalink('/landing/product'),
+        },
+        {
+          text: 'Land:Coming Soon or Pre-Launch',
+          href: getPermalink('/landing/pre-launch'),
+        },
+        {
+          text: 'Land:Subscription',
+          href: getPermalink('/landing/subscription'),
+        },
+      ],
+    },
+  ],
+  actions: [{ text: 'Download ProgrammeX', href: '/pdfs/Dundonald-Show-Catalog-2024.pdf', target: '_blank' }],
+};
+
+export const footerData = {
+  links: [
+    {
+      title: 'Show Rings',
+      links: [
+        { text: 'Ring A1: Cattle', href: '/rings/ringa1' },
+        { text: 'Ring A2: Sheep', href: '/rings/ringa2' },
+        { text: 'Ring A3: Horses', href: '/rings/ringa3' },
+        { text: 'Ring 1: Working Hunter', href: '/rings/ring1' },
+        { text: 'Ring 2: Equine Show Ring', href: '/rings/ring2' },
+        { text: 'Ring 3: Hazards', href: '/rings/ring3' },
+        { text: 'Ring 4: Clear Round', href: '/rings/ring4' },
+        { text: 'Ring D1: Canine Any Variety', href: '/rings/ringd1' },
+        { text: 'Ring D2: Canine Best of', href: '/rings/ringd2' },
+      ],
+    },
+    {
+      title: 'The Stars',
+      links: [
+        { text: 'Bovine', href: '/stars/bovine' },
+        { text: 'Canine', href: '/stars/canine' },
+        { text: 'Equine', href: '/stars/equine' },
+        { text: 'Ovine', href: '/stars/ovine' },
+      ],
+    },
+    {
+      title: 'Sponsors',
+      links: [
+        { text: 'Platinum', href: '/sponsors/platinum' },
+        { text: 'Gold', href: '/sponsors/gold' },
+        { text: 'Silver', href: '/sponsors/silver' },
+      ],
+    },
+    {
+      title: 'InformationX',
+      links: [
+        { text: 'Show Programmes', href: '/info/programmes' },
+        { text: 'Contact', href: '/info/contact' },
+        { text: 'About', href: '/info/about' },
+        { text: 'Rules & Regulations', href: getPermalink('/rules') },
+      ],
+    },
+  ],
+  secondaryLinks: [
+    // { text: 'Rules', href: getPermalink('/rules') },
+    // { text: 'Privacy Policy', href: getPermalink('/privacy') },
+  ],
+  socialLinks: [
+    // { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
+    // { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
+    {
+      ariaLabel: 'Facebook',
+      icon: 'tabler:brand-facebook',
+      href: 'https://www.facebook.com/profile.php?id=100032848585944',
+    },
+    // { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/Ian-T-Price/astrowind-fork' },
+  ],
+  footNote: `
+    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://onwidget.com/favicon/favicon-32x32.png" alt="onWidget logo" loading="lazy"></img>
+    Made by <a class="text-blue-600 underline dark:text-muted" href="https://IanTPrice.com/"> Ian T Price</a> · All rights reserved.
+  `,
+};

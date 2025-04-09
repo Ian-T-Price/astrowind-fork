@@ -1,5 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import { headerDataRings } from '~/navigationrings';
 
 // import Hero from '~/components/widgets/Hero.astro';
 // import Note from '~/components/widgets/Note.astro';
@@ -19,8 +21,11 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- Features Widget *************** -->
+  <Fragment slot="header">
+    <Header {...headerDataRings} isSticky showToggleTheme />
+  </Fragment>
 
+  <!-- Features Widget *************** -->
   <Features
     id="ring1"
     tagline="Ring 1"
@@ -192,6 +197,7 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
+    id="classes"
     title="Classes"
     subtitle="Classes start at 09:00"
     tagline="Components"

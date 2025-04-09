@@ -11,7 +11,9 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 // import { getPermalink } from '~/utils/permalinks';
-import { getPermalink, getBlogPermalink } from '~/utils/permalinks';
+// import { getPermalink, getBlogPermalink } from '~/utils/permalinks';
+
+import { headerDataRings } from '~/navigationrings';
 
 import Button from '~/components/ui/Button.astro';
 import Image from '~/components/common/Image.astro';
@@ -30,7 +32,9 @@ const metadata = {
 <Layout metadata={metadata}>
   <Fragment slot="announcement"></Fragment>
   <Fragment slot="header">
-    <Header
+    <!-- <Header {...headerData} isSticky showRssFeed showToggleTheme /> -->
+    <Header {...headerDataRings} isSticky showToggleTheme />
+    <!-- <Header
       position="left"
       links={[
         { text: 'Website', href: 'https://dundonald-show.org.uk/', target: '_blank' },
@@ -119,7 +123,7 @@ const metadata = {
       ]}
       isSticky
       showToggleTheme
-    />
+    /> -->
   </Fragment>
 
   <!-- Hero2 Widget ******************* -->
