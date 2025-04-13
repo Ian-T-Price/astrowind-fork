@@ -21,10 +21,27 @@ export const headerDataRings = (showBookOnline: boolean = false, showClasses: st
         {
           text: 'Classes',
           href: '#classes'
-            },
+        },
       ]
     },
-    // Add more options as needed
+    ringa1: {
+      text: 'Classes',
+      href: '#classes',
+      links: [
+        {
+          text: 'Holstein Friesian',
+          href: '#classes',
+        },
+        {
+          text: 'Ayrshire & any other Dairy Breed',
+          href: '#classes2'
+        },
+        {
+          text: 'Beef Cattle',
+          href: '#classes3'
+        },
+      ]
+    },
   };
 
   // Create the base links array
