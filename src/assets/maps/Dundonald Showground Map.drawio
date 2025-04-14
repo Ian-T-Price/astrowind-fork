@@ -129,27 +129,27 @@
         <mxCell id="eVk1EjVdgg69-cqQSEaU-8" value="Horse&lt;div&gt;Box Parking&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;rotation=-10;direction=north;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="P4wSGEyPV3sOb4F1gPvH-4" vertex="1">
           <mxGeometry x="461.999" y="197.999" width="106.3" height="47.25" as="geometry" />
         </mxCell>
-        <UserObject label="Ring 1" link="https://dundonald-show.org.uk/rings/ring1" linkTarget="_blank" id="gf2ulhYp3P_6vlHQNVUt-12">
+        <UserObject label="Ring 1" link="https://dundonald-show.org.uk/rings/ring1" linkTarget="_blank" rel="noopener noreferrer" id="gf2ulhYp3P_6vlHQNVUt-12">
           <mxCell style="fontColor=#0000EE;fontStyle=4;rounded=1;overflow=hidden;spacing=0;strokeColor=none;" parent="P4wSGEyPV3sOb4F1gPvH-4" vertex="1">
             <mxGeometry x="284" y="332" width="41.7322" height="43.31" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Ring 2" link="https://dundonald-show.org.uk/rings/ring2" linkTarget="_blank" id="gf2ulhYp3P_6vlHQNVUt-13">
+        <UserObject label="Ring 2" link="https://dundonald-show.org.uk/rings/ring2" linkTarget="_blank" rel="noopener noreferrer" id="gf2ulhYp3P_6vlHQNVUt-13">
           <mxCell style="fontColor=#0000EE;fontStyle=4;rounded=0;overflow=hidden;spacing=1.9685;strokeColor=none;" parent="P4wSGEyPV3sOb4F1gPvH-4" vertex="1">
             <mxGeometry x="347.2434" y="339" width="41.7322" height="30.31" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Ring 3" link="https://dundonald-show.org.uk/rings/ring3" linkTarget="_blank" id="gf2ulhYp3P_6vlHQNVUt-14">
+        <UserObject label="Ring 3" link="https://dundonald-show.org.uk/rings/ring3" linkTarget="_blank" rel="noopener noreferrer" id="gf2ulhYp3P_6vlHQNVUt-14">
           <mxCell style="fontColor=#0000EE;fontStyle=4;rounded=0;overflow=hidden;spacing=1.9685;strokeColor=none;" parent="P4wSGEyPV3sOb4F1gPvH-4" vertex="1">
             <mxGeometry x="402.0004" y="339.997" width="41.7322" height="30.31" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Ring 5" link="https://dundonald-show.org.uk/rings/ring5" linkTarget="_blank" id="gf2ulhYp3P_6vlHQNVUt-15">
+        <UserObject label="Ring 5" link="https://dundonald-show.org.uk/rings/ring5" linkTarget="_blank" rel="noopener noreferrer" id="gf2ulhYp3P_6vlHQNVUt-15">
           <mxCell style="fontColor=#0000EE;fontStyle=4;rounded=0;overflow=hidden;spacing=1.9685;strokeColor=none;" parent="P4wSGEyPV3sOb4F1gPvH-4" vertex="1">
             <mxGeometry x="202.0004" y="421.997" width="41.7322" height="19.685" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Ring 4" link="https://dundonald-show.org.uk/rings/ring4" linkTarget="_blank" id="gf2ulhYp3P_6vlHQNVUt-16">
+        <UserObject label="Ring 4" link="https://dundonald-show.org.uk/rings/ring4" linkTarget="_blank" rel="noopener noreferrer" id="gf2ulhYp3P_6vlHQNVUt-16">
           <mxCell style="fontColor=#0000EE;fontStyle=4;rounded=0;overflow=hidden;spacing=1.9685;strokeColor=none;" parent="P4wSGEyPV3sOb4F1gPvH-4" vertex="1">
             <mxGeometry x="669.0004" y="222.997" width="41.7322" height="30.31" as="geometry" />
           </mxCell>
@@ -161,12 +161,12 @@
         <mxCell id="lFiEgaqGXIEN_1LE6l1--19" value="Spectator&lt;div&gt;Car Parking&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;rotation=0;direction=north;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="P4wSGEyPV3sOb4F1gPvH-10" vertex="1">
           <mxGeometry x="637.79" y="370.08" width="283.43" height="35.44" as="geometry" />
         </mxCell>
-        <UserObject label="Ring D1" link="https://dundonald-show.org.uk/rings/ringd1" linkTarget="_blank" id="gf2ulhYp3P_6vlHQNVUt-20">
+        <UserObject label="Ring D1" link="https://dundonald-show.org.uk/rings/ringd1" linkTarget="_blank" rel="noopener noreferrer" id="gf2ulhYp3P_6vlHQNVUt-20">
           <mxCell style="fontColor=#0000EE;fontStyle=4;rounded=0;overflow=hidden;spacing=1.9685;strokeColor=none;" parent="P4wSGEyPV3sOb4F1gPvH-10" vertex="1">
             <mxGeometry x="866.1474000000001" y="192.924" width="41.7322" height="19.685" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Ring D2" link="https://dundonald-show.org.uk/rings/ringd2" linkTarget="_blank" id="gf2ulhYp3P_6vlHQNVUt-21">
+        <UserObject label="Ring D2" link="https://dundonald-show.org.uk/rings/ringd2" linkTarget="_blank" rel="noopener noreferrer" id="gf2ulhYp3P_6vlHQNVUt-21">
           <mxCell style="fontColor=#0000EE;fontStyle=4;rounded=0;overflow=hidden;spacing=1.9685;strokeColor=none;" parent="P4wSGEyPV3sOb4F1gPvH-10" vertex="1">
             <mxGeometry x="866.1444000000001" y="299.221" width="41.7322" height="19.685" as="geometry" />
           </mxCell>
@@ -175,7 +175,7 @@
         <mxCell id="gf2ulhYp3P_6vlHQNVUt-23" value="&lt;br&gt;&lt;font&gt;Cattle&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;rotation=0;" parent="lFiEgaqGXIEN_1LE6l1--24" vertex="1">
           <mxGeometry x="543.307" y="460.62699999999995" width="59.06" height="59.055" as="geometry" />
         </mxCell>
-        <UserObject label="Ring A1" link="https://dundonald-show.org.uk/rings/ringa1" linkTarget="_blank" id="gf2ulhYp3P_6vlHQNVUt-24">
+        <UserObject label="Ring A1" link="https://dundonald-show.org.uk/rings/ringa1" linkTarget="_blank" rel="noopener noreferrer" id="gf2ulhYp3P_6vlHQNVUt-24">
           <mxCell style="fontColor=#0000EE;fontStyle=4;rounded=0;overflow=hidden;spacing=1.9685;strokeColor=none;" parent="lFiEgaqGXIEN_1LE6l1--24" vertex="1">
             <mxGeometry x="551.9674" y="464.56399999999996" width="41.7322" height="19.685" as="geometry" />
           </mxCell>
@@ -183,7 +183,7 @@
         <mxCell id="gf2ulhYp3P_6vlHQNVUt-25" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;Sheep" style="rounded=0;whiteSpace=wrap;html=1;rotation=0;" parent="lFiEgaqGXIEN_1LE6l1--24" vertex="1">
           <mxGeometry x="633.854" y="460.63399999999996" width="59.06" height="59.055" as="geometry" />
         </mxCell>
-        <UserObject label="Ring A2" link="https://dundonald-show.org.uk/rings/ringa2" linkTarget="_blank" id="gf2ulhYp3P_6vlHQNVUt-26">
+        <UserObject label="Ring A2" link="https://dundonald-show.org.uk/rings/ringa2" linkTarget="_blank" rel="noopener noreferrer" id="gf2ulhYp3P_6vlHQNVUt-26">
           <mxCell style="fontColor=#0000EE;fontStyle=4;rounded=0;overflow=hidden;spacing=1.9685;strokeColor=none;" parent="lFiEgaqGXIEN_1LE6l1--24" vertex="1">
             <mxGeometry x="642.5144" y="464.561" width="41.7322" height="19.685" as="geometry" />
           </mxCell>
