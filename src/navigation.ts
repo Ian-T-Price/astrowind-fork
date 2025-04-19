@@ -85,6 +85,10 @@ export const headerData = {
       ],
     },
     {
+      text: 'Trophies',
+      href: getPermalink('/trophies'),
+    },
+    {
       text: 'Info',
       href: getPermalink('/info'),
       links: [
