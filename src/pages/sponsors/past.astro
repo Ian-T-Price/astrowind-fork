@@ -1,554 +1,149 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
 import Features from '~/components/widgets/Features.astro';
-// import Features2 from '~/components/widgets/Features2.astro';
+import sponsors from '~/data/pastSponsors.json';
 
 const metadata = {
   title: 'Dundonald Farmers Society 2025 Open Show',
   ignoreTitleTemplate: true,
 };
+
+// Group sponsors alphabetically
+const sponsorGroups: { label: string; items: typeof sponsors }[] = [
+  { label: 'A–I', items: [] },
+  { label: 'J–R', items: [] },
+  { label: 'S–Z', items: [] },
+];
+
+for (const sponsor of sponsors) {
+  const firstLetter = sponsor.title.charAt(0).toUpperCase();
+
+  if (firstLetter >= 'A' && firstLetter <= 'I') {
+    sponsorGroups[0].items.push(sponsor);
+  } else if (firstLetter >= 'J' && firstLetter <= 'R') {
+    sponsorGroups[1].items.push(sponsor);
+  } else if (firstLetter >= 'S' && firstLetter <= 'Z') {
+    sponsorGroups[2].items.push(sponsor);
+  }
+}
 ---
 
 <Layout metadata={metadata}>
-  <!-- Features Widget *************** -->
-
-  <Features
-    id="silver"
-    tagline="Previous Sponsors"
-    title="Past Patreons"
-    subtitle="DUNDONALD FARMERS' SOCIETY greatly appreciate the donations and support given by the following:-"
-    items={[
-{
-      title: 'Alisaview Cockapoos',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Armour Vets',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Campbell Fuels',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-      title: 'Carlton Carriages',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Centreline Support Ltd',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'County Vets',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Craig Wilson Ltd',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Creative Candlish Arts & Crafts',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'David Ogilvie Engineering Ltd',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Eden Garden Centre',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'First Saddlery',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Fullwoodhead Dairy Supplies',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Galbraith, Ayr',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Gibbs of Galston',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Green Home Energy Systems',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Hamilton Bros',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Hamilton Tarmac',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Hillhouse Group',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Holmes Farm Plants, Drybridge',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'IAE Equestrian & Farming Supplies',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-      title: 'J.M. Sommerville',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'J.P. Campbell & Son',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Jack Lamb Agric. Merchant',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'James Smith Fencing',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Jet Set Saddlery & Countrywear Ltd',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'John McNae',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'John Smith & Sons',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Konsileo',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'KZ Hair, Prestwick',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Langholm Farm Shop & Tea Room',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-      title: 'Maggie`s Muddy Mutts',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-      title: 'Mathieson Family',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'MBM Veterinary Group',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Mrs. Townley',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Muirmill Equestrian Centre',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'NFU Mutual, Kilmarnock',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Origin Fertilisers',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Quest Farm Supplies',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Robert H. Goldie Ltd',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Scotlee Transport Services Ltd',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Scotmin Nutrition',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Simpsinns',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Smith Contracts',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Sugar & Spice, Troon',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Susan Harper – Brae Glen Ponies',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Tarff Valley',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'The O`Neil Family',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Thomas Murray Agri Engineers',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-// {
-//       title: 'W.P. Hair',
-//         description: '',
-//         icon: 'flat-color-icons:currency-exchange',
-//       },
-// {
-//       title: 'Walter Watson, Dundonald',
-//         description: '',
-//         icon: 'flat-color-icons:currency-exchange',
-//       },
-// {
-//       title: 'Zinc Home',
-//         description: '',
-//         icon: 'flat-color-icons:currency-exchange',
-//       },
-
-]}
-  />
-
-  <!-- Features2 Widget **************
-  <Features2
-    title="Classes"
-    subtitle="Classes start at 09:00"
-    tagline="Components"
-    items={[
-      {
-        title: '',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Alisaview Cockapoos',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Armour Vets',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Campbell Fuels',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Carlton Carriages',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Centreline Support',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'County Vets',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Craig Wilson Ltd',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Creative Candlish Arts & Crafts',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'David Ogilvie Engineering Ltd',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Eden Garden Centre',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'First Saddlery',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Fullwoodhead Dairy Supplies',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Galbraith, Ayr',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Gibbs of Galston',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Green Home Energy Systems',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Hamilton Bros',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Hamilton Tarmac',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Hillhouse Group',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Holmes Farm Plants, Drybridge',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'IAE Equestrian & Farming Supplies',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'J.M. Sommerville',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'J.P. Campbell & Son',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Jack Lamb Agric. Merchant',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'James Smith Fencing',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Jet Set Saddlery & Countrywear Ltd',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'John McNae',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'John Smith & Sons',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Konsileo',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'KZ Hair, Prestwick',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Langholm Farm Shop & Tea Room',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Maggie`s Muddy Mutts',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Mathieson Family',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'MBM Veterinary Group',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Mrs. Townley',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Muirmill Equestrian Centre',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'NFU Mutual, Kilmarnock',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Origin Fertilisers',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Quest Farm Supplies',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Robert H. Goldie Ltd',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Scotlee Transport Services Ltd',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Scotmin Nutrition',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Simpsinns',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Smith Contracts',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Sugar & Spice, Troon',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Susan Harper – Brae Glen Ponies',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Tarff Valley',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'The O`Neil Family',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Thomas Murray Agri Engineers',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'W.P. Hair',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Walter Watson, Dundonald',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-{
-      title: 'Zinc Home',
-        description: '',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      ]}
-  > -->
+  {sponsorGroups.map(group => (
+    group.items.length > 0 && (
+      <>
+        {/* <h2 class="text-2xl font-bold mb-4">{group.label}</h2> */}
+        <Features
+          id={group.label.toLowerCase().replace(/\W/g, '')}
+          tagline="Previous Sponsors"
+          title={`Sponsors ${group.label}`}
+          subtitle=""
+          items={group.items}
+        />
+      </>
+    )
+  ))}
 
   <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent">
-    </div>
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent" />
   </Fragment>
 </Layout>
+
+
+<!-- ---
+import Layout from '~/layouts/PageLayout.astro';
+import sponsors from '~/data/pastSponsors.json';
+
+const metadata = {
+  title: 'Dundonald Farmers Society 2025 Open Show',
+  ignoreTitleTemplate: true,
+};
+
+// Group sponsors alphabetically
+const sponsorGroups: { label: string; items: typeof sponsors }[] = [
+  { label: 'A–I', items: [] },
+  { label: 'J–R', items: [] },
+  { label: 'S–Z', items: [] },
+];
+
+for (const sponsor of sponsors) {
+  const firstLetter = sponsor.title.charAt(0).toUpperCase();
+  if (firstLetter >= 'A' && firstLetter <= 'I') {
+    sponsorGroups[0].items.push(sponsor);
+  } else if (firstLetter >= 'J' && firstLetter <= 'R') {
+    sponsorGroups[1].items.push(sponsor);
+  } else if (firstLetter >= 'S' && firstLetter <= 'Z') {
+    sponsorGroups[2].items.push(sponsor);
+  }
+}
+---
+
+<Layout metadata={metadata}>
+  <div class="space-y-12">
+    {sponsorGroups.map(group => (
+      group.items.length > 0 && (
+<section class="relative">
+  <h2 class="sticky top-0 bg-white dark:bg-gray-900 z-10 p-4 text-2xl font-bold shadow-md">
+    Sponsors {group.label}
+  </h2>
+  <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+    {group.items.map(sponsor => (
+      <li class="p-4 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
+        {sponsor.title}
+      </li>
+    ))}
+  </ul>
+  <div class="h-32"></div> <!-- extra spacer so sticky is noticeable --
+</section>
+      )
+    ))}
+  </div>
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent" />
+  </Fragment>
+</Layout> -->
+
+
+<!-- ---
+import Layout from '~/layouts/PageLayout.astro';
+import Features from '~/components/widgets/Features.astro';
+import sponsors from '~/data/pastSponsors.json';
+
+const metadata = {
+  title: 'Dundonald Farmers Society 2025 Open Show',
+  ignoreTitleTemplate: true,
+};
+
+// Chunk the sponsors into groups of 20
+const chunkSize = 20;
+const sponsorGroups: { title: string; description: string; icon: string; }[][] = [];
+
+
+for (let i = 0; i < sponsors.length; i += chunkSize) {
+  sponsorGroups.push(sponsors.slice(i, i + chunkSize));
+}
+---
+<Layout metadata={metadata}>
+
+  <Features
+  id="headline"
+  tagline="Previous Sponsors"
+  title="Previous Sponsors"
+  subtitle="DUNDONALD FARMERS' SOCIETY greatly appreciate the donations and support given by the following:-"
+/>
+
+  {sponsorGroups.map((group, index) => (
+    <section class="mb-12">
+      <Features
+        id={`sponsors-group-${index}`}
+        title={`Sponsors Group ${index + 1}`}
+        items={group}
+      />
+    </section>
+  ))}
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Layout> -->
