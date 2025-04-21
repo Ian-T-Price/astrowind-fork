@@ -34,6 +34,19 @@ export const footerData = {
       ],
     },
     {
+      title: 'Trophies',
+      links: [
+        { text: 'Bovine', href: '/trophies/#bovine' },
+        { text: 'Canine', href: '/trophies/#canine' },
+        { text: 'Clydesdale', href: '/trophies/#clydesdale' },
+        { text: 'Driving', href: '/trophies/#driving' },
+        { text: 'Equine', href: '/trophies/#equine' },
+        { text: 'Show Jumping (Equine)', href: '/trophies/#showjumping' },
+        { text: 'Working Hunter (Equine)', href: '/trophies/#workinghunter' },
+        // { text: 'Ovine', href: '/trophies/#ovine' },
+      ],
+    },
+    {
       title: 'Information',
       links: [
         { text: 'Show Programmes', href: '/info/programmes' },

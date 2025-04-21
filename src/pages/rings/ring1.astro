@@ -1,6 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import { headerDataRings } from '~/navigation-rings';
+import { headerDataRings } from '~/navigationRings';
 
 import Header from '~/components/widgets/Header.astro';
 import Features from '~/components/widgets/Features.astro';
@@ -20,7 +20,7 @@ const metadata = {
 };
 
 const showBookingOption = true; // Set to true to show "Book Online", false to hide it
-const showClasses = "basic"; // Set to basic (default), or ring name to show the appropriate classes menus
+const showClasses = 'basic'; // Set to basic (default), or ring name to show the appropriate classes menus
 
 // Pass the flag to headerDataRings function
 const navigationData = headerDataRings(showBookingOption, showClasses);
@@ -41,8 +41,7 @@ const navigationData = headerDataRings(showBookingOption, showClasses);
     items={[
       {
         title: 'Event',
-        description:
-          'Starting at cross poles and working up, throughtout the day, to 1 metre plus.',
+        description: 'Starting at cross poles and working up, throughtout the day, to 1 metre plus.',
         icon: 'tabler:brand-tailwind',
       },
       {
@@ -223,50 +222,59 @@ const navigationData = headerDataRings(showBookingOption, showClasses);
     items={[
       {
         title: 'Class 11: Working Hunter: Starting cross poles',
-        description: '<a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=472689" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
+        description:
+          '<a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=472689" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
         icon: 'flat-color-icons:template',
       },
       {
         title: 'Class 12: Working Hunter: 30cm',
-        description: '<a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=472690" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
+        description:
+          '<a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=472690" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
         icon: 'flat-color-icons:gallery',
       },
       {
         title: 'Class 13: Working Hunter: 40cm',
-        description: '<a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=472691" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
+        description:
+          '<a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=472691" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
         icon: 'flat-color-icons:document',
       },
       {
         title: 'Class 14: Working Hunter: 50cm',
-        description: 'Championship Trophy: W. M. Townly Memorial Trophy Challenge<br /> <a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=472692" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
+        description:
+          'Championship Trophy: W. M. Townly Memorial Trophy Challenge<br /> <a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=472692" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
         icon: 'flat-color-icons:document',
       },
       {
         title: 'Class 15: Working Hunter: 60cm',
-        description: 'Championship Trophy: The Morag Hay Memorial Trophy, awarded to the champion jumping over 60cm.<br /> <a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=472693" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
+        description:
+          'Championship Trophy: The Morag Hay Memorial Trophy, awarded to the champion jumping over 60cm.<br /> <a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=472693" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
         icon: 'flat-color-icons:document',
       },
       {
         title: 'Class 16: Working Hunter: 70cm',
-        description: 'Championship Trophy: The Morag Hay Memorial Trophy, awarded to the champion jumping over 60cm.<br /><a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=472694" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
+        description:
+          'Championship Trophy: The Morag Hay Memorial Trophy, awarded to the champion jumping over 60cm.<br /><a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=472694" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
         title: 'Class 17: Working Hunter: 80cm',
-        description: 'Championship Trophy: The Morag Hay Memorial Trophy, awarded to the champion jumping over 60cm.<br /><a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=472695" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
+        description:
+          'Championship Trophy: The Morag Hay Memorial Trophy, awarded to the champion jumping over 60cm.<br /><a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=472695" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
         icon: 'flat-color-icons:template',
       },
       {
         title: 'Class 18: Working Hunter: 90cm',
-        description: 'Championship Trophy: The Morag Hay Memorial Trophy, awarded to the champion jumping over 60cm.<br /><a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=473099" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
+        description:
+          'Championship Trophy: The Morag Hay Memorial Trophy, awarded to the champion jumping over 60cm.<br /><a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=473099" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
         icon: 'flat-color-icons:gallery',
       },
       {
         title: 'Class 19: Working Hunter: 100cm',
-        description: 'Championship Trophy: The Morag Hay Memorial Trophy, awarded to the champion jumping over 60cm.<br /><a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=473100" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
+        description:
+          'Championship Trophy: The Morag Hay Memorial Trophy, awarded to the champion jumping over 60cm.<br /><a href="https://www.equoevents.co.uk/EnterEvent/EnterEvent/52050?eventClassId=473100" target="_blank"" rel="noopener noreferrer" class="text-blue-900">Book Online</a>',
         icon: 'flat-color-icons:document',
       },
-]}
+    ]}
   >
     <!-- <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>

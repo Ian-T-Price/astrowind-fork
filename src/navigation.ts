@@ -87,15 +87,45 @@ export const headerData = {
     {
       text: 'Trophies',
       href: getPermalink('/trophies'),
+      links: [
+        {
+          text: 'Bovine',
+          href: '/trophies/#bovine',
+        },
+        {
+          text: 'Canine',
+          href: '/trophies/#canine',
+        },
+        {
+          text: 'Clydesdale',
+          href: '/trophies/#clydesdale',
+        },
+        {
+          text: 'Driving',
+          href: '/trophies/#driving',
+        },
+        {
+          text: 'Equine',
+          href: '/trophies/#equine',
+        },
+        {
+          text: 'Show Jumping (Equine)',
+          href: '/trophies/#showjumping',
+        },
+        {
+          text: 'Working Hunter (Equine)',
+          href: '/trophies/#workinghunter',
+        },
+        // {
+        //   text: 'Ovine',
+        //   href: '/trophies/#ovine',
+        // },
+      ],
     },
     {
       text: 'Info',
       href: getPermalink('/info'),
       links: [
-        // {
-        //   text: 'Features (Anchor Link)',
-        //   href: getPermalink('/#features'),
-        // },
         {
           text: 'Show Programmes',
           href: getPermalink('/info/programmes'),
@@ -104,10 +134,6 @@ export const headerData = {
           text: 'Showground Maps',
           href: getPermalink('/info/showground'),
         },
-        // {
-        //   text: 'Pricing',
-        //   href: getPermalink('/pricing'),
-        // },
         {
           text: 'About Us',
           href: getPermalink('/about'),
@@ -120,10 +146,6 @@ export const headerData = {
           text: 'Rules & Regulations',
           href: getPermalink('/rules'),
         },
-        // {
-        //   text: 'Privacy policy',
-        //   href: getPermalink('/privacy'),
-        // },
       ],
     },
 

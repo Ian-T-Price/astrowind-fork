@@ -3,7 +3,7 @@ site:
   # description: Dundonald Farmers' Society Open Show 2025
   site: 'https://dundonald-show.org.uk'
   base: '/'
-  trailingSlash: true
+  trailingSlash: ignore
 
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
 

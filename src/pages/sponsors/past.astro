@@ -10,9 +10,9 @@ const metadata = {
 
 // Group sponsors alphabetically
 const sponsorGroups: { label: string; items: typeof sponsors }[] = [
-  { label: 'A–I', items: [] },
-  { label: 'J–R', items: [] },
-  { label: 'S–Z', items: [] },
+  { label: 'A – I', items: [] },
+  { label: 'J – R', items: [] },
+  { label: 'S – Z', items: [] },
 ];
 
 for (const sponsor of sponsors) {
@@ -29,26 +29,34 @@ for (const sponsor of sponsors) {
 ---
 
 <Layout metadata={metadata}>
-  {sponsorGroups.map(group => (
-    group.items.length > 0 && (
-      <>
-        {/* <h2 class="text-2xl font-bold mb-4">{group.label}</h2> */}
-        <Features
-          id={group.label.toLowerCase().replace(/\W/g, '')}
-          tagline="Previous Sponsors"
-          title={`Sponsors ${group.label}`}
-          subtitle=""
-          items={group.items}
-        />
-      </>
+  <Features
+    id="headline"
+    tagline="Previous Sponsors"
+    title="Supporters of the Show"
+    subtitle="DUNDONALD FARMERS' SOCIETY greatly appreciate the donations and support given by the following:-"
+  />
+  {
+    sponsorGroups.map(
+      (group) =>
+        group.items.length > 0 && (
+          <>
+            {/* <h2 class="text-2xl font-bold mb-4">{group.label}</h2> */}
+            <Features
+              id={group.label.toLowerCase().replace(/\W/g, '')}
+              tagline="Previous Sponsors"
+              title={`Sponsors: ${group.label}`}
+              subtitle=""
+              items={group.items}
+            />
+          </>
+        )
     )
-  ))}
+  }
 
   <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent" />
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
   </Fragment>
 </Layout>
-
 
 <!-- ---
 import Layout from '~/layouts/PageLayout.astro';
@@ -103,7 +111,6 @@ for (const sponsor of sponsors) {
     <div class="absolute inset-0 bg-blue-50 dark:bg-transparent" />
   </Fragment>
 </Layout> -->
-
 
 <!-- ---
 import Layout from '~/layouts/PageLayout.astro';

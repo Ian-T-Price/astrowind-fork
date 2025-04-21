@@ -10,20 +10,38 @@ const metadata = {
 
 // Group trophies alphabetically
 const trophyGroups: { label: string; items: typeof trophies }[] = [
-  { label: 'A–I', items: [] },
-  { label: 'J–R', items: [] },
-  { label: 'S–Z', items: [] },
+  { label: 'Bovine', items: [] },
+  { label: 'Canine', items: [] },
+  { label: 'Clydesdale', items: [] },
+  { label: 'Driving', items: [] },
+  { label: 'Equine', items: [] },
+  { label: 'Ovine', items: [] },
+  { label: 'Show Jumping', items: [] },
+  { label: 'Working Hunter', items: [] },
+  { label: 'Unknown', items: [] },
 ];
 
 for (const trophy of trophies) {
-  const firstLetter = trophy.title.charAt(0).toUpperCase();
+  const firstLetter = trophy.description.substring(9, 11).toUpperCase();
 
-  if (firstLetter >= 'A' && firstLetter <= 'I') {
+  if (firstLetter >= 'BO' && firstLetter <= 'BO') {
     trophyGroups[0].items.push(trophy);
-  } else if (firstLetter >= 'J' && firstLetter <= 'R') {
+  } else if (firstLetter >= 'CA' && firstLetter <= 'CA') {
     trophyGroups[1].items.push(trophy);
-  } else if (firstLetter >= 'S' && firstLetter <= 'Z') {
+  } else if (firstLetter >= 'CL' && firstLetter <= 'CL') {
     trophyGroups[2].items.push(trophy);
+  } else if (firstLetter >= 'DR' && firstLetter <= 'DR') {
+    trophyGroups[3].items.push(trophy);
+  } else if (firstLetter >= 'EQ' && firstLetter <= 'EQ') {
+    trophyGroups[4].items.push(trophy);
+  } else if (firstLetter >= 'OV' && firstLetter <= 'OV') {
+    trophyGroups[5].items.push(trophy);
+  } else if (firstLetter >= 'SH' && firstLetter <= 'SH') {
+    trophyGroups[6].items.push(trophy);
+  } else if (firstLetter >= 'WO' && firstLetter <= 'WO') {
+    trophyGroups[7].items.push(trophy);
+  } else {
+    trophyGroups[8].items.push(trophy);
   }
 }
 ---
@@ -31,16 +49,13 @@ for (const trophy of trophies) {
 <Layout metadata={metadata}>
   {trophyGroups.map(group => (
     group.items.length > 0 && (
-      <>
-        {/* <h2 class="text-2xl font-bold mb-4">{group.label}</h2> */}
         <Features
           id={group.label.toLowerCase().replace(/\W/g, '')}
-          tagline="Previous trophies"
-          title={`Trophies ${group.label}`}
+          tagline="Trophies & Winners"
+          title={`Trophies: ${group.label}`}
           subtitle=""
           items={group.items}
         />
-      </>
     )
   ))}
 
