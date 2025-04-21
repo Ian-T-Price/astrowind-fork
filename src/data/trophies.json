@@ -21,7 +21,7 @@
   },
   {
     "title": "Clydesdale Horse Society Shield",
-    "description": "Section: Clydesdale<br />Awarded for: Best yearling or two year old colt or filly<br /><span class='text-xs'>that is registered or eligible for registration with the Society</span><br /><span class='text-xs'>and has not won a Shield before in its liftime.</span><br />Presented by: Clydesdale Horse Society<br />2024 Winner: TBC",
+    "description": "Section: Clydesdale<br />Awarded for: Best yearling or two year old colt or filly<br /><span class='text-xs'>that is registered or eligible for registration with the Society</span><br /><span class='text-xs'>and has not won a Shield before in its lifetime.</span><br />Presented by: Clydesdale Horse Society<br />2024 Winner: TBC",
     "icon": "tabler:trophy"
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "title": "Dalblair Motors Perpetual Trophy",
-    "description": "Section: Show Jumping<br />Awarded for: Show Jumping Pony 40cm<br /><span class='text-xs'>(2025: Class 44)</span><br />Presented by: Dalblair Motors<br />2024 Winner: TBC",
+    "description": "Section: Show Jumping<br />Awarded for: Show Jumping Pony 60cm<br /><span class='text-xs'>(2025: Class 46)</span><br />Presented by: Dalblair Motors<br />2024 Winner: TBC",
     "icon": "tabler:trophy"
   },
   {
@@ -61,7 +61,7 @@
   },
   {
     "title": "James Craig Ltd Cup",
-    "description": "Section: Bovine<br />Awarded for: Holstein Friesian Champion<br />Presented by: James Craig Ltd<br />2024 Winner: TBC",
+    "description": "Section: Bovine<br />Awarded for: Ayrshire &amp; any other Dairy Breed Champion<br />Presented by: James Craig Ltd<br />2024 Winner: TBC",
     "icon": "tabler:trophy"
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "title": "James Reid Trophy",
-    "description": "Section: Bovine<br />Awarded for: Ayrshire &amp; any other Dairy Breed Champion<br />Presented by: Family of James Reid<br />2024 Winner: TBC",
+    "description": "Section: Bovine<br />Awarded for: Holstein Friesian Champion<br />Presented by: Family of James Reid<br />2024 Winner: TBC",
     "icon": "tabler:trophy"
   },
   {
@@ -101,7 +101,7 @@
   },
   {
     "title": "Morag Hay Memorial Trophy",
-    "description": "Section: Working Hunter<br />Awarded for: Working Hunter Champion 60-80cm<br /><span class='text-xs'>(2025: Classes 13 to 18)</span><br />Presented by: Family of Morag Hay<br />2024 Winner: Laurissa Ferguson",
+    "description": "Section: Working Hunter<br />Awarded for: Working Hunter Champion 60-90cm<br /><span class='text-xs'>(2025: Classes 13 to 18)</span><br />Presented by: Family of Morag Hay<br />2024 Winner: Laurissa Ferguson",
     "icon": "tabler:trophy"
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "title": "Rough Collie Memorial Shield",
-    "description": "Section: Canine<br />Awarded for: Reserve Best Rough Collie in Show<br /><span class='text-xs'>All Classes: Rings D1/D2</span><br />Presented by: Mrs Mitchell<br />2024 Winner: TBC",
+    "description": "Section: Canine<br />Awarded for: Best Rough Collie in Show<br /><span class='text-xs'>All Classes: Rings D1/D2</span><br />Presented by: Mrs Mitchell<br />2024 Winner: TBC",
     "icon": "tabler:trophy"
   },
   {
