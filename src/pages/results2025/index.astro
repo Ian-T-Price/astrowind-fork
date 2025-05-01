@@ -1,0 +1,85 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+// import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Dundonald Farmers Society 2025 Open Show',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Results 2025"
+    subtitle="2025 Show Results in PDF format<br /><span class='font-semibold italic'>There well may be errors or omissions in the results <br /><a href='mailto:info@dundonald-show.org.uk?subject=Results Error or Omission&body=Please let us know how we can amend and correct the results%0D%0APlease state the Class, the existing error and the correction required%0D%0A- = - = - = -%0D%0A' target='_blank' class='font-bold text-blue-600'>Please send us an email and we'll sort it ASAP</a></span>"
+    tagline="Entrants & Placings"
+    items={[
+      {
+        title: '2025 Equine Results:',
+        description: "<span class='font-bold text-blue-600'><a href='/pdfs/results2025/Dundonald_Show-2025_Results.pdf' target='_blank'> All Classes </a></span><br/>A summary of the Equine results for all classes in Rings 1-4",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: '2025 Equine Results:',
+        description: "<span class='font-bold text-blue-600'><a href='/pdfs/results2025/Dundonald_Show-2025_Results_Ring1.pdf' target='_blank'> Ring 1 - Working Hunter </a></span><br/>Results for the Working Hunter classes in Ring 1",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: '2025 Equine Results:',
+        description:
+          "<span class='font-bold text-blue-600'><a href='/pdfs/results2025/Dundonald_Show-2025_Results_Ring2.pdf' target='_blank'> Ring 2 - Equine Show Ring </a></span><br/>Results for the Showing classes in Ring 2",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: '2025 Equine Results:',
+        description:
+          "<span class='font-bold text-blue-600'><a href='/pdfs/results2025/Dundonald_Show-2025_Results_Ring3.pdf' target='_blank'>  Ring 3 - Hazards & Obedience </a></span><br/>Results for the Hazards & Obedience classes in Ring 3",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: '2025 Equine Results:',
+        description:
+          "<span class='font-bold text-blue-600'><a href='/pdfs/results2025/Dundonald_Show-2025_Results_Ring4.pdf' target='_blank'> Ring 4 - Show Jumping </a></span><br/>Results for the Show Jumping classes in Ring 5",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: '2025 Equine Results:',
+        description:
+          "<span class='font-bold text-blue-600'> Coming soon: Ring 5 - Cyldesdale Horses </a></span><br/>Results for the Cyldesdale Horses classes in Ring 5",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: '2025 Bovine Results:',
+        description:
+          "<span class='font-bold text-blue-600'> Coming soon: Ring A1 - Cattle </a></span><br/>Results for the Cattle classes in Ring A1",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: '2025 Ovine Results:',
+        description:
+          "<span class='font-bold text-blue-600'> Coming Soon: Ring A2 - Sheep </a></span><br/>Results for the Sheep classes in Ring A2",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: '2025 Canine Results:',
+        description:
+          "<span class='font-bold text-blue-600'> Maybe coming: Ring D1 - Canine Any Variety </a></span><br/>Results for the Canine Any Variety classes in Ring D1",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: '2025 Canine Results:',
+        description:
+          "<span class='font-bold text-blue-600'> Maybe coming:Ring D2 - Canine Best of </a></span><br/>Results for the Canine Best of classes in Ring D2",
+        icon: 'flat-color-icons:template',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+</Layout>

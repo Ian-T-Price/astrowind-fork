@@ -85,6 +85,48 @@ export const headerData = {
       ],
     },
     {
+      text: 'Results',
+      href: getPermalink('/results2025'),
+      links: [
+        {
+          text: 'Ring 1: Working Hunter',
+          href: getPermalink('/results2025'),
+        },
+        {
+          text: 'Ring 2: Equine Show Ring',
+          href: getPermalink('/results2025'),
+        },
+        {
+          text: 'Ring 3: Hazards & Obedience',
+          href: getPermalink('/results2025'),
+        },
+        {
+          text: 'Ring 4: Show Jumping',
+          href: getPermalink('/results2025'),
+        },
+        {
+          text: 'Ring 5: Clydesdale Horses',
+          href: getPermalink('/results2025'),
+        },
+        {
+          text: 'Ring A1: Cattle',
+          href: getPermalink('/results2025'),
+        },
+        {
+          text: 'Ring A2: Sheep',
+          href: getPermalink('/results2025'),
+        },
+        {
+          text: 'Ring D1: Canine Any Variety',
+          href: getPermalink('/results2025'),
+        },
+        {
+          text: 'Ring D2: Canine Best of',
+          href: getPermalink('/results2025'),
+        },
+      ],
+    },
+    {
       text: 'Trophies',
       href: getPermalink('/trophies'),
       links: [
