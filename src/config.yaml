@@ -1,9 +1,11 @@
+# https://github.com/onwidget/astrowind/issues/596 - trailingSlash
+
 site:
   name: Dundonald Show 2025
   # description: Dundonald Farmers' Society Open Show 2025
   site: 'https://dundonald-show.org.uk'
   base: '/'
-  trailingSlash: ignore
+  trailingSlash: false
 
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
 
