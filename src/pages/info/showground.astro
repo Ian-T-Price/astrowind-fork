@@ -13,10 +13,15 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Features2 Widget ************** -->
 
-  <Hero image={{ src: '~/assets/images/Dundonald-Showground-Map_nobackground.webp', alt: 'Dundonald Showground map', width: 920, height: 544 }}>
-    <Fragment slot="title">
-      Dundonald Showground
-    </Fragment>
+  <Hero
+    image={{
+      src: '~/assets/images/Dundonald-Showground-Map_nobackground.webp',
+      alt: 'Dundonald Showground map',
+      width: 920,
+      height: 544,
+    }}
+  >
+    <Fragment slot="title"> Dundonald Showground </Fragment>
 
     <Fragment slot="subtitle">
       <p>Dundonald Camp Track, Ayr Road, Irvine(A78), KA11 5AX</p>
@@ -30,12 +35,14 @@ const metadata = {
     items={[
       {
         title: '2025 Showground Map',
-        description: "<span class='font-bold text-blue-600'><a href='/pdfs/Dundonald Showground Map.pdf' target='_blank'>PDF file with photo background</a></span>",
+        description:
+          "<span class='font-bold text-blue-600'><a href='/pdfs/Dundonald Showground Map.pdf' target='_blank'>PDF file with photo background</a></span>",
         icon: 'flat-color-icons:template',
       },
       {
         title: '2025 Showground Map',
-        description: "<span class='font-bold text-blue-600'><a href='/pdfs/Dundonald Showground Map.nobackground.pdf' target='_blank'>PDF file with clear background</a></span>",
+        description:
+          "<span class='font-bold text-blue-600'><a href='/pdfs/Dundonald Showground Map.nobackground.pdf' target='_blank'>PDF file with clear background</a></span>",
         icon: 'flat-color-icons:template',
       },
       // {

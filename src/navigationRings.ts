@@ -2,13 +2,12 @@
 import { getPermalink } from './utils/permalinks';
 
 // Convert headerDataRings from an object to a function that accepts a showBookOnline parameter
-export const headerDataRings = (showBookOnline: boolean = false, showClasses: string = "basic") => {
-
+export const headerDataRings = (showBookOnline: boolean = false, showClasses: string = 'basic') => {
   // Define class menu configurations
   const classMenuOptions = {
     basic: {
       text: 'Classes',
-      href: '#classes'
+      href: '#classes',
     },
     ringd: {
       text: 'Classes',
@@ -20,9 +19,9 @@ export const headerDataRings = (showBookOnline: boolean = false, showClasses: st
         },
         {
           text: 'Classes',
-          href: '#classes'
+          href: '#classes',
         },
-      ]
+      ],
     },
     ringa1: {
       text: 'Classes',
@@ -34,13 +33,13 @@ export const headerDataRings = (showBookOnline: boolean = false, showClasses: st
         },
         {
           text: 'Ayrshire & any other Dairy Breed',
-          href: '#classes2'
+          href: '#classes2',
         },
         {
           text: 'Beef Cattle',
-          href: '#classes3'
+          href: '#classes3',
         },
-      ]
+      ],
     },
   };
 

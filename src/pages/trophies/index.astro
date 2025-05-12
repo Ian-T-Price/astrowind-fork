@@ -47,20 +47,23 @@ for (const trophy of trophies) {
 ---
 
 <Layout metadata={metadata}>
-  {trophyGroups.map(group => (
-    group.items.length > 0 && (
-        <Features
-          id={group.label.toLowerCase().replace(/\W/g, '')}
-          tagline="Trophies & Winners"
-          title={`Trophies: ${group.label}`}
-          subtitle=""
-          items={group.items}
-        />
+  {
+    trophyGroups.map(
+      (group) =>
+        group.items.length > 0 && (
+          <Features
+            id={group.label.toLowerCase().replace(/\W/g, '')}
+            tagline="Trophies & Winners"
+            title={`Trophies: ${group.label}`}
+            subtitle=""
+            items={group.items}
+          />
+        )
     )
-  ))}
+  }
 
   <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent" />
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
   </Fragment>
 </Layout>
 
