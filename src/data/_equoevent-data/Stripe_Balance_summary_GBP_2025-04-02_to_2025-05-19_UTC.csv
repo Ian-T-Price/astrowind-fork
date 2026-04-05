@@ -1,0 +1,9 @@
+"category","description","net_amount","currency"
+"starting_balance","Starting balance (2025-04-02)","0.00",
+"activity_gross","Account activity before fees","1810.50","gbp"
+"activity_fee","Less fees","-119.89","gbp"
+"activity","Activity","1690.61","gbp"
+"payouts_gross","Payouts to bank","-1074.88","gbp"
+"payouts_fee","Payout fees","0.00","gbp"
+"payouts","Total payouts","-1074.88","gbp"
+"ending_balance","Ending balance (2025-05-19)","615.73","gbp"
