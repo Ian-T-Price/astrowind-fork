@@ -134,7 +134,7 @@ export const headerDataRings = (showBookOnline: boolean = false, showClasses: st
 
   return {
     links,
-    actions: [{ text: 'Download Programme', href: '/pdfs/Dundonald-Show_equine.pdf', target: '_blank' }],
+    actions: [{ text: 'Download 2026 Programme', href: '/pdfs/Dundonald-Show_equine.pdf', target: '_blank' }],
   };
 };
 // {
